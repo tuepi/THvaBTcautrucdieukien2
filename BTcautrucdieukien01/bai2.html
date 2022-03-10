@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<input type="text" id="t" placeholder="Nhập tuổi">
+<button onclick="xet()">Click Me!</button>
+<script>
+    function xet() {
+        let tuoi = document.getElementById("t").value;
+        if (tuoi<15) {
+            document.write("Không đủ điều kiện vào lớp 10");
+        } else {
+            document.write("Có điều kiện vào lớp 10");
+        }
+    }
+</script>
+</body>
+</html>

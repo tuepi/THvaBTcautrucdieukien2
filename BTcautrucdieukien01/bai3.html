@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<input type="text" id="sn" placeholder="Nhập một số nguyên">
+<button onclick="kt()">Click Me!</button>
+<script>
+    function kt() {
+        let soNguyen = document.getElementById("sn").value;
+        if (soNguyen < 0){
+            document.write(soNguyen + " là số nhỏ hơn 0");
+        } else if (soNguyen != 0){
+            document.write(soNguyen + " là số lớn hơn 0");
+        }
+    }
+</script>
+</body>
+</html>

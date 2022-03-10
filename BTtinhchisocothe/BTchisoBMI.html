@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+<input type="text" id="w" placeholder="Nhập cân nặng(kg)">
+<input type="text" id="h" placeholder="Nhập chiều cao(m)">
+<button onclick="chiSo()">Click!</button>
+<script>
+    function chiSo() {
+        let weight = document.getElementById("w").value;
+        let height = document.getElementById("h").value;
+        let BMI = weight/(height*height);
+        if (BMI<18.5){
+            document.write("Underweight");
+        } else if (BMI<25){
+            document.write("Normal");
+        } else if (BMI<30){
+            document.write("Overweight");
+        } else {
+            document.write("Obese");
+        }
+    }
+</script>
+</body>
+</html>

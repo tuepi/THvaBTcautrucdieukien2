@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+<input type="text" id="na" placeholder="Nhập a">
+<input type="text" id="nb" placeholder="Nhập b">
+<button onclick="kiemTra()">Click Me!</button>
+<script>
+    function kiemTra() {
+        let a = document.getElementById("na").value;
+        let b = document.getElementById("nb").value;
+        if (a % b == 0){
+            alert("a chia hết cho b");
+        } else {
+            alert("a không chia hết cho b");
+        }
+    }
+</script>
+</body>
+</html>

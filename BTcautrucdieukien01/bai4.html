@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<input type="text" id="na" placeholder="Nhập a">
+<input type="text" id="nb" placeholder="Nhập b">
+<input type="text" id="nc" placeholder="Nhập c">
+<button onclick="kiemTra()">Click Me!</button>
+<script>
+    function kiemTra() {
+        let a = document.getElementById("na").value;
+        let b = document.getElementById("nb").value;
+        let c = document.getElementById("nc").value;
+        if (a > b && a > c){
+            document.write(a + " là số lớn nhất.");
+        } if (b > a && b > c){
+            document.write(b + " là số lớn nhất.");
+        } if (c > a && c > b){
+            document.write(c + " là số lớn nhất.");
+        } else {
+            document.write("Không có số nào lớn nhất.")
+        }
+    }
+</script>
+</body>
+</html>
