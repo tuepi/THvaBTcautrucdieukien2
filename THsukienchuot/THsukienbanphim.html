@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện bàn phím</title>
+</head>
+<body onload="ok()">
+<img id="anh" src="../THsukienchuot/anhdaidien.jpg" alt="" style="width: 300px; position: absolute; left: 600px; top: 200px;">
+<script>
+    // let anh = document.getElementById("anh");
+    // function right() {
+    //     anh.style.left =parseInt(anh.style.left) + 10 + "px";
+    // }
+    // function left() {
+    //     anh.style.left =parseInt(anh.style.left) - 10 + "px";
+    // }
+    // function up() {
+    //     anh.style.top =parseInt(anh.style.top) - 10 + "px";
+    // }
+    // function down() {
+    //     anh.style.top =parseInt(anh.style.top) + 10 + "px";
+    // }
+    // function move(a) {
+    //     switch (a.keyCode) {
+    //         case 37 :
+    //             left();
+    //             break;
+    //         case  39 :
+    //             right();
+    //             break;
+    //         case 38 :
+    //             up();
+    //             break;
+    //         case 40 :
+    //             down();
+    //             break;
+    //     }
+    // }
+    // function ok() {
+    //     window.addEventListener("keydown",move);
+    // }
+    let anh =document.getElementById("anh");
+    window.addEventListener("keydown", (evt) => {
+        if (evt.keyCode == 37) {
+            anh.style.left = parseInt(anh.style.left) - 10 + "px";
+        }
+        if (evt.keyCode == 38) {
+            anh.style.top = parseInt(anh.style.top) - 10 + "px";
+        }
+        if (evt.keyCode == 39) {
+            anh.style.left = parseInt(anh.style.left) + 10 + "px";
+        }
+        if (evt.keyCode == 40) {
+            anh.style.top = parseInt(anh.style.top) + 10 + "px";
+        }
+    })
+</script>
+</body>
+</html>
