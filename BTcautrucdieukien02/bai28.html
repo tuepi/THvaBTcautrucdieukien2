@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<input type="text" id="t" placeholder="Nhập tuổi">
+<button onclick="xet()">Xác nhận</button>
+<script>
+  function xet() {
+    let tuoi = document.getElementById("t").value;
+    // let tuoi = Number.isSafeInteger(+tuoi);
+    if (tuoi>0 && tuoi <120) {
+      document.write("Đó là số tuổi của một người.");
+    }else {
+      document.write("Đó không phải là số tuổi của một ngươi.");
+    }
+  }
+</script>
+</body>
+</html>
