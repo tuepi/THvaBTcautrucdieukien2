@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<input type="text" id="kiemTra" placeholder="Nhập điểm kiểm tra">
+<input type="text" id="giuaKy" placeholder="Nhập điểm thi giữa kỳ">
+<input type="text" id="cuoiKy" placeholder="Nhập điểm thi cuối kỳ">
+<button onclick="xepLoai()">Click Me!</button>
+<script>
+    function xepLoai() {
+        let diemKT = document.getElementById("kiemTra").value;
+        let diemGK = document.getElementById("giuaKy").value;
+        let diemCK = document.getElementById("cuoiKy").value;
+        let diemTrungBinh = (+diemKT + +diemGK + +diemCK)/3;
+        document.write("Điểm tổng kết là " + diemTrungBinh + " điểm.");
+        document.write("<br>");
+        if (diemTrungBinh < 5){
+            document.write("Học sinh xếp loại C.");
+        } else if (diemTrungBinh < 8){
+            document.write("Học sinh xếp loại B.");
+        } else if (diemTrungBinh <= 10){
+            document.write("Học sinh xếp loại A.");
+        } else {
+            document.write("Không thể xếp loại.");
+        }
+    }
+</script>
+</body>
+</html>

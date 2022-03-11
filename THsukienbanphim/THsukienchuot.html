@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện chuột</title>
+</head>
+<body>
+<button onclick="phai()">Sang phải</button>
+<button onclick="trai()">Sang trái</button>
+<img id="anh1" src="batman1.png" alt="" style="width: 300px; position: absolute; top: 50px; left: 0;" >
+<img id="anh2" src="spm2.png" alt="" style="width: 280px; position: absolute; top: 50px; left: 600px;">
+<script>
+    let anh1 = document.getElementById("anh1");
+    let anh2 = document.getElementById("anh2");
+    function phai() {
+        anh1.style.left = (parseInt(anh1.style.left)+10) + "px";
+    }
+    function trai() {
+        anh2.style.left = (parseInt(anh2.style.left)-10) + "px";
+    }
+</script>
+</body>
+</html>

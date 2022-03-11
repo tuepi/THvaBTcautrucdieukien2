@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<h3>Tam giác vuông có 2 cạnh kề là a và b: </h3>
+<br>
+<input type="text" id="ck1" placeholder="Nhập a">
+<input type="text" id="ck2" placeholder="Nhập b">
+<button onclick="tinh()">Kết Quả</button>
+<script>
+    function tinh() {
+        let a = document.getElementById("ck1").value;
+        let b = document.getElementById("ck2").value;
+        let dienTich = a * b / 2;
+        document.write("Diện tích hình tam giác vuông là " + dienTich);
+    }
+</script>
+</body>
+</html>

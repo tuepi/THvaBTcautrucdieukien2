@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<h4>Hình vuông có cạnh là a</h4>
+<br>
+<input type="text" id="ca" placeholder="Nhập cạnh a (mét)">
+<button onclick="tinh()">Kết quả</button>
+<script>
+    function tinh() {
+        let canha = document.getElementById("ca").value;
+        let dienTich = canha * canha;
+        document.write("Diện tích hình vuông là " + dienTich + " mét vuông");
+    }
+</script>
+</body>
+</html>

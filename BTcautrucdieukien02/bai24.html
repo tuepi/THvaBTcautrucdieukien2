@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<input type="text" id="cd" placeholder="Nhập chiều dài">
+<input type="text" id="cr" placeholder="Nhập chiều rộng">
+<button onclick="kq()">Kết Quả</button>
+<script>
+    function kq() {
+        let a = document.getElementById("cd").value;
+        let b = document.getElementById("cr").value;
+        let dienTich = a * b;
+        document.write("Diện tích hình chữ nhật là " + dienTich);
+    }
+</script>
+</body>
+</html>

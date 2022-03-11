@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<input type="text" id="m" placeholder="Nhập mét">
+<button onclick="doi()">Đổi</button>
+<script>
+    function doi() {
+        let met = document.getElementById("m").value;
+        let feet = met * 3.2808;
+        document.write(met + " mét thì bằng " + feet + " Feet.")
+    }
+</script>
+</body>
+</html>

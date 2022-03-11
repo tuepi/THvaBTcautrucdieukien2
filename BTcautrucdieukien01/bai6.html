@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<input type="text" id="ds" placeholder="Nhập doanh số bán hàng trong tháng (kVNĐ)" style="width: 300px">
+<button onclick="tinh()">Tính toán</button>
+<script>
+function tinh() {
+    let doanhThu = document.getElementById("ds").value;
+    if (doanhThu < 200) {
+        let hh1 = doanhThu * 0.02;
+        document.write("Hoa hồng nhận được là " + hh1 + " kVNĐ");
+    } else if (doanhThu < 500) {
+        let hh2 = 200 * 0.02 + (doanhThu - 200) * 0.05;
+        document.write("Hoa hồng nhận được là  " + hh2 + " kVNĐ");
+    } else {
+        let hh3 = 200*0.02 + (500-200)*0.05 + (doanhThu - 500)*0.1;
+        document.write("Hoa hồng nhận được là  " + hh3 + " kVNĐ");
+    }
+}
+</script>
+</body>
+</html>
