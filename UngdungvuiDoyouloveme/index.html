@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me</title>
+</head>
+<body>
+<h2>Do you love me?</h2>
+<button onclick="y()" id="a">YES</button>
+<button style="position: absolute; left: 70px; top: 67px" onmouseover="diChuyen()" id="aa">NO</button>
+<script>
+    function y() {
+        alert("I love you too");
+    }
+    function diChuyen() {
+        let no = document.getElementById("aa");
+        no.style.left = Math.random()*1000 + "px";
+        no.style.top = Math.random()*1000 + "px";
+    }
+</script>
+</body>
+</html>
